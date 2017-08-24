@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><title>AngularBlogger</title><base href="/angular-blogger/"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="shortcut icon" href="assets/images/favicon.ico"><link rel="stylesheet" id="redux-google-fonts-css" href="http://fonts.googleapis.com/css?family=Roboto%3A300%7CJosefin+Slab%3A400%2C300%7COpen+Sans%3A300&#038;subset=latin&#038;ver=1416385166" type="text/css" media="all"/><!-- Bootstrap --><link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet"><link href="assets/css/style.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css"><style type="text/css">.owl-theme .owl-controls {
+			  position: relative;
+			}
+			.owl-theme .owl-controls .owl-page {
+			  position: relative;
+			  display: inline-block;
+			  width: 6em;
+			  height: 3em;
+			  margin: 0 .25em;
+			  outline: none;
+			  transition: all .1s ease-in-out;
+			}
+			.owl-theme .owl-controls .owl-page:focus {
+			  outline: none;
+			}
+			.owl-theme .owl-controls .owl-page span {
+			  display: none;
+			}
+			.owl-theme .owl-controls .owl-page.active {
+			  transform: scale(1.1);
+			}
+			.owl-theme .owl-controls .owl-page:not(.active) {
+			  transform: scale(0.8);
+			  -webkit-box-shadow: inset 0 0 10em 0 rgba(0, 0, 0, 0.75);
+			  box-shadow: inset 0 0 10em 0 rgba(0, 0, 0, 0.75);
+			}
+			.owl-theme .owl-controls .owl-page:not(.active):hover {
+			  transform: scale(0.9);
+			}
+			.owl-theme .owl-controls .owl-buttons .owl-prev, .owl-theme .owl-controls .owl-buttons .owl-next {
+			  font-size: 2em;
+			  display: block;
+			  position: absolute;
+			  top: 0;
+			  line-height: .75em;
+			  width: 1em;
+			  height: 1em;
+			  border-radius: 1px;
+			  background-color: #c0c0c0;
+			}
+			.owl-theme .owl-controls .owl-buttons .owl-prev:focus, .owl-theme .owl-controls .owl-buttons .owl-next:focus {
+			  -webkit-box-shadow: inset 0 0 10em 0 rgba(255, 0, 0, 0.75);
+			  box-shadow: inset 0 0 10em 0 rgba(255, 0, 0, 0.75);
+			}
+			.owl-theme .owl-controls .owl-buttons .owl-prev {
+			  left: .25em;
+			}
+			.owl-theme .owl-controls .owl-buttons .owl-next {
+			  right: .25em;
+			}</style><style type="text/css">@-webkit-keyframes spin {
+			  0% {
+			    transform: rotate(0deg);
+			    /* Firefox 16+, IE 10+, Opera */ }
+			  100% {
+			    transform: rotate(360deg);
+			    /* Firefox 16+, IE 10+, Opera */ } }
+			@-moz-keyframes spin {
+			  0% {
+			    -moz-transform: rotate(0deg);
+			    /* Firefox 16+*/ }
+			  100% {
+			    -moz-transform: rotate(360deg);
+			    /* Firefox 16+*/ } }
+			@keyframes spin {
+			  0% {
+			    transform: rotate(0deg);
+			    /* Firefox 16+, IE 10+, Opera */ }
+			  100% {
+			    transform: rotate(360deg);
+			    /* Firefox 16+, IE 10+, Opera */ } }
+			#preloader {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  z-index: 1003;
+			  background: #f4f4f4;
+			  opacity: 0.8; }
+			  #preloader > div {
+			    display: block;
+			    position: relative;
+			    left: 50%;
+			    top: 50%;
+			    width: 150px;
+			    height: 150px;
+			    margin: -75px 0 0 -75px;
+			    border-radius: 50%;
+			    border: 10px solid transparent;
+			    border-top-color: #f95372;
+			    transform: translate3d(0, 0, 0);
+			    animation: spin 2s linear infinite;
+			    /* Chrome, Firefox 16+, IE 10+, Opera */ }
+			    #preloader > div:before {
+			      content: "";
+			      position: absolute;
+			      top: 5px;
+			      left: 5px;
+			      right: 5px;
+			      bottom: 5px;
+			      border-radius: 50%;
+			      border: 10px solid transparent;
+			      border-top-color: #00abff;
+			      -webkit-animation: spin 3s linear infinite;
+			      /* Chrome, Opera 15+, Safari 5+ */
+			      animation: spin 3s linear infinite;
+			      /* Chrome, Firefox 16+, IE 10+, Opera */ }
+			    #preloader > div:after {
+			      content: "";
+			      position: absolute;
+			      top: 15px;
+			      left: 15px;
+			      right: 15px;
+			      bottom: 15px;
+			      border-radius: 50%;
+			      border: 10px solid transparent;
+			      border-top-color: #e7ba08;
+			      animation: spin 1.5s linear infinite;
+			      /* Chrome, Firefox 16+, IE 10+, Opera */ }</style><link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head><body><nav class="navbar navbar-default navbar-static-top"><div class="container-fluid"><div class="navbar-header"><a class="navbar-brand" href="#">Angular-Blogger</a></div></div></nav><app-root></app-root><div id="preloader"><div></div></div><!-- <div class="col-md-2" style="position: fixed; bottom: 2%;">
+        	Created by <a href="http://luismanu.com/" target="_blank">Luismanu</a> using <a href="https://angular.io/" target="_blank">Angular 4</a>, <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> on the frontend and <a href="https://www.blogger.com/" target="_blank">Blogger</a> on the backend.
+        </div> --><script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script><script type="text/javascript" src="assets/bootstrap/bootstrap.min.js"></script><script type="text/javascript" src="assets/js/SmoothScroll.js"></script><script type="text/javascript" src="assets/js/jquery.waitforimages.js"></script><script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script><script type="text/javascript" src="assets/js/lightbox.min.js"></script><script type="text/javascript" src="assets/FlexSlider/jquery.flexslider-min.js"></script><script type="text/javascript" src="assets/js/imagesloaded.js"></script><script type="text/javascript" src="assets/js/owl.carousel.min.js"></script><script type="text/javascript" src="assets/js/jflickrfeed.min.js"></script><script type="text/javascript" src="assets/js/jquery.cookie.js"></script><script type="text/javascript" src="assets/js/custom.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script><script type="text/javascript">jQuery.noConflict()(function($) {
+				$('#postModal').on('show.bs.modal', function (e) {
+					$('br').remove();
+					$('.modal-body-content').find('img').remove();
+					$('#post-images').owlCarousel({
+						// navigation: true,
+						slideSpeed: 300,
+						paginationSpeed: 400,
+						singleItem: true,
+						autoHeight: true,
+						afterInit: makePages,
+						afterUpdate: makePages
+					});
+				});
+
+				$('#postModal').on('hide.bs.modal', function (e) {
+					var owl = $(".owl-carousel").data('owlCarousel');
+					owl.destroy();
+				});
+
+			    function makePages() {
+			        $.each(this.owl.userItems, function(i) {
+			            $('.owl-controls .owl-page').eq(i).css({
+		                    'background': 'url(' + $(this).find('img').attr('src') + ')',
+		                    'background-size': 'cover'
+						})
+			        });
+			    }
+			});</script><script type="text/javascript" src="inline.2f564631e9e5a300cc0b.bundle.js"></script><script type="text/javascript" src="polyfills.0963b44a58b5526cfab7.bundle.js"></script><script type="text/javascript" src="vendor.20706eda7022c9e6140b.bundle.js"></script><script type="text/javascript" src="main.18845fd14458813d9ac9.bundle.js"></script></body></html>
